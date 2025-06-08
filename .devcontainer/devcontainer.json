@@ -16,11 +16,6 @@
     }
   },
   "containerEnv": {
-    "ROS_DOMAIN_ID": "100",
-    "DISPLAY": "$(hostname):0",
-    "QT_X11_NO_MITSHM": "1"
-  },
-  "mounts": [
-    "source=$HOME/.Xauthority,target=/root/.Xauthority,type=bind,consistency=cached"
-  ]
+    "ROS_DOMAIN_ID": "100"
+  }
 }

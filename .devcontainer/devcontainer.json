@@ -1,0 +1,21 @@
+{
+  "name": "ROS 2 Jazzy Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": ["--privileged", "--net=host"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-python.python",
+        "ms-iot.vscode-ros",
+        "saoudrizwan.claude-dev"
+      ]
+    },
+  },
+  "containerEnv": {
+    "ROS_DOMAIN_ID": "100"
+  }
+}

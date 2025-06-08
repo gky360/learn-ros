@@ -1,5 +1,7 @@
 # learn-ros
 
+Dev environment for ROS 2 Jazzy (https://docs.ros.org/en/jazzy/index.html).
+
 ## Installation
 
 ```shell

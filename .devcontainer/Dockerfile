@@ -1,3 +1,3 @@
-FROM tiryoh/ros2-desktop-vnc:jazzy
+FROM osrf/ros:jazzy-desktop
 
 RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc

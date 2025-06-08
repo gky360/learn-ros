@@ -3,13 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "runArgs": [
-    "--privileged",
-    "--net=host",
-    "--security-opt",
-    "seccomp=unconfined",
-    "--shm-size=512m"
-  ],
+  "runArgs": ["--privileged", "--net=host"],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,11 +13,9 @@
         "ms-iot.vscode-ros",
         "saoudrizwan.claude-dev"
       ]
-    }
+    },
   },
   "containerEnv": {
     "ROS_DOMAIN_ID": "100"
-  },
-  "forwardPorts": [6080],
-  "appPort": ["6080:80"]
+  }
 }

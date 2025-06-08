@@ -1,9 +1,8 @@
 {
   "name": "ROS 2 Jazzy Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "runArgs": ["--privileged", "--net=host"],
+  "dockerComposeFile": ["../compose.yaml"],
+  "service": "ros_dev",
+  "workspaceFolder": "/workspaces/learn-ros",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,8 +13,5 @@
         "saoudrizwan.claude-dev"
       ]
     }
-  },
-  "containerEnv": {
-    "ROS_DOMAIN_ID": "100"
   }
 }

@@ -3,6 +3,7 @@
   "dockerComposeFile": ["../compose.yaml"],
   "service": "ros_dev",
   "workspaceFolder": "/workspaces/learn-ros",
+  "shutdownAction": "stopCompose",
   "customizations": {
     "vscode": {
       "extensions": [

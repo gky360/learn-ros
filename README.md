@@ -49,6 +49,9 @@ Dev environment for ROS 2 Jazzy (https://docs.ros.org/en/jazzy/index.html).
 
 	Be ware: You will always have to run `xhost +` after a restart of X11 as this is not a persistent setting.
 
+References:
+
+- https://gist.github.com/sorny/969fe55d85c9b0035b0109a31cbcb89
 
 ## Development
 

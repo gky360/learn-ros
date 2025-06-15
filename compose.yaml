@@ -1,22 +1,14 @@
 services:
-  ros_dev:
+  ros-dev:
     build:
-      context: .devcontainer
-      dockerfile: Dockerfile
+      context: .
     volumes:
       - .:/workspaces/learn-ros:cached
-    command: /bin/sh -c "while sleep 1000; do :; done"
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    command: ['sleep', 'infinity']
+    # network_mode: host
     environment:
-      DISPLAY: novnc:0.0
-    depends_on:
-      - novnc
-    network_mode: service:novnc
-  # https://wiki.ros.org/docker/Tutorials/GUI#Using_noVNC
-  novnc:
-    image: theasp/novnc:latest
-    ports:
-      - '8080:8080'
-    environment:
-      DISPLAY_WIDTH: '3000'
-      DISPLAY_HEIGT: '1800'
-      RUN_XTERM: no
+      DISPLAY: host.docker.internal:0
+    # security_opt:
+    #   - seccomp:unconfined
+    # ipc: host

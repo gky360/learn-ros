@@ -3,8 +3,8 @@
 <package format="3">
   <name>py_srvcli</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="gky360@gmail.com">ubuntu</maintainer>
+  <description>Python client server tutorial</description>
+  <maintainer email="gky360@gmail.com">gky360</maintainer>
   <license>Apache-2.0</license>
 
   <depend>rclpy</depend>

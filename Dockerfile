@@ -1,4 +1,4 @@
-FROM osrf/ros:jazzy-desktop-full
+FROM osrf/ros:jazzy-desktop
 
 WORKDIR /workspaces/learn-ros
 

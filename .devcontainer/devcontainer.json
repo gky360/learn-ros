@@ -2,6 +2,7 @@
   "name": "ROS 2 Jazzy Dev Container",
   "dockerComposeFile": "../compose.yaml",
   "service": "ros-dev",
+  "shutdownAction": "stopCompose",
   "workspaceFolder": "/workspaces/learn-ros",
   // Set *default* container specific settings.json values on container create.
   "customizations": {
